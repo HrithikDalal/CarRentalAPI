@@ -1,0 +1,4 @@
+{
+    "mongoURI" : "mongodb+srv://hrithik:12345@cluster0-izamx.mongodb.net/BookCar?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
+}
