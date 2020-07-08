@@ -14,6 +14,10 @@ router.post("/",[ isAdmin, [
         'Car registration number is required'
     ).not().isEmpty().isLength({min : 6, max: 10}),
     check(
+        'image',
+        'Car image is required'
+    ).not().isEmpty(),
+    check(
         'company',
         'Car company name is required'
     ).not().isEmpty(),

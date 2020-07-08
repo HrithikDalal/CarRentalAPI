@@ -17,6 +17,7 @@ exports.create = async(req,res)=>{
         const newCar = new Car({
             user: req.user.id,
             registrationNumber : req.body.registrationNumber,
+            image : req.body.image,
             company : req.body.company,
             model : req.body.model,
             type : req.body.type,
