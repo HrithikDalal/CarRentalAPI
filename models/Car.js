@@ -10,6 +10,10 @@ const CarSchema=new mongoose.Schema({
         unique : true,
         required : true
     },
+    picture :{
+        type: String,
+        required: true
+    },
     company:{
         type: String, 
         required: true
