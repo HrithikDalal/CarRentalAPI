@@ -117,7 +117,7 @@ exports.delete = async(req, res) => {
             return res.status(400).json('You can not delete car with active bookings.');
         }
 
-        await car.remove();
+        await car.deleteOne();
         res.json({ msg: 'Car deleted' });
         
     } catch (err) {

@@ -108,9 +108,9 @@ exports.delete = async (req, res) => {
       //Remove user bookings
       await Booking.deleteMany({ user: req.user.id });
       // Remove profile
-      await Profile.findOneAndRemove({ user: req.user.id });
+      await Profile.findOneAndDelete({ user: req.user.id });
       // Remove user
-      await User.findOneAndRemove({ _id: req.user.id });
+      await User.findOneAndDelete({ _id: req.user.id });
   
       res.json({ msg: 'User deleted' });
     } catch (err) {

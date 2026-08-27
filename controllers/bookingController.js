@@ -77,7 +77,7 @@ exports.delete = async(req, res) => {
         return res.status(401).json({ msg: 'User not authorized' });
         }
 
-        await booking.remove();
+        await booking.deleteOne();
 
         res.json({ msg: 'Booking Cancelled' });
         
