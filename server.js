@@ -1,6 +1,5 @@
-var express         = require("express"),
-    app             = express(),
-    bodyParser      = require("body-parser");
+const express = require("express");
+const app = express();
 
 const connectDB = require("./config/db");
 
@@ -10,8 +9,8 @@ connectDB();
 
 
 //BODY PARSER
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 
 
